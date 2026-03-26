@@ -9,7 +9,11 @@ The strategy is divided into two phases:
 1. **Exploration Phase (A/B Test)**: We allocate a specific budget (e.g., $2,000) equally between Bandit A and Bandit B to figure out which one has a better empirical win rate.
 2. **Exploitation Phase**: We take the winner of the A/B test and allocate the entire remaining budget (e.g., $8,000) solely to that bandit to maximize our return.
 
-This app visualizes the simulation results (averaged over multiple runs for statistical smoothing) and compares the expected reward against the "Optimal Strategy" (picking the best bandit from pull #1).
+## 📊 Dashboard & Visualizations
+This app provides a comprehensive dashboard with three main visualizations:
+1. **Cumulative Average Return vs. Dollars Spent**: A line chart showing the overall return trajectory of the A/B testing strategy over time, compared to the Optimal Return.
+2. **True vs. Estimated Bandit Means**: A clear bar chart comparing the mathematically defined true means side-by-side with the empirical means discovered during the exploration phase.
+3. **Independent Convergence Simulation**: A detailed rolling-average chart tracking Bandits A, B, and C pulled independently, demonstrating how empirical averages progressively converge toward their true structural probabilities as the sample size increases.
 
 ## 🚀 How to Run Locally
 
