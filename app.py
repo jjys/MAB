@@ -122,13 +122,3 @@ if st.button("🚀 Run Simulation", type="primary"):
         
         ax.legend()
         st.pyplot(fig)
-        
-st.markdown("---")
-st.markdown("**How to Deploy this on Streamlit Community Cloud:**")
-st.markdown("""
-1. Go to [share.streamlit.io](https://share.streamlit.io/)
-2. Click **New app** -> From existing repository
-3. Select your repository `jjys/MAB`
-4. Main file path: `app.py`
-5. Click **Deploy!**
-""")
